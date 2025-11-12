@@ -1,0 +1,16 @@
+def solution(num_list):
+    odd = 0
+    even = 0
+    
+    for i in range(len(num_list)):
+        if i % 2 == 0:
+            even += num_list[i]
+        else:
+            odd += num_list[i]
+            
+    if even > odd:
+        return even
+    elif even < odd:
+        return odd
+    else:
+        return even
